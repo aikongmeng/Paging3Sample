@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <TextView
         android:id="@+id/name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:ellipsize="end"
         android:gravity="center_vertical"
         android:maxLines="1"
-        android:ellipsize="end"
         android:textColor="#5194fd"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -24,8 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:maxLines="10"
         android:ellipsize="end"
+        android:maxLines="10"
         tools:text="Flutter makes it easy and fast to build beautiful apps for mobile and beyond." />
 
     <LinearLayout
@@ -34,6 +33,15 @@
         android:layout_marginTop="10dp"
         android:gravity="end"
         tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/language_text"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15dp" />
+
 
         <ImageView
             android:layout_width="wrap_content"

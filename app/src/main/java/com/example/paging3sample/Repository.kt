@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 
 object Repository {
 
-    private const val PAGE_SIZE = 50
+    private const val PAGE_SIZE = 10
 
     private val gitHubService = GitHubService.create()
 
